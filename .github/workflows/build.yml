@@ -1,12 +1,12 @@
-# Copyright 2023 Manna Harbour
+# Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Example corneish_zen_v1'
+name: 'Build'
 on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["corneish_zen_v1_left","corneish_zen_v1_right"]'
-
+      board: '["nice_nano_v2"]'
+      shield: '["corne_left","corne_right"]'
