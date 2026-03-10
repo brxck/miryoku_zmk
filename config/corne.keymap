@@ -1,6 +1,16 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+/ {
+    macros {
+        tl_macro: tl_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(GRAVE))>, <&kp LG(LC(LA(LS(W))))>;
+        };
+    };
+};
+
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne.h"
 #include "../miryoku/miryoku.dtsi"
