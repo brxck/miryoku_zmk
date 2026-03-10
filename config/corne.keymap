@@ -5,18 +5,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        tl_macro: tl_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LA(LS(GRAVE)) &kp LG(LC(LA(LS(W))))>
-                , <&macro_pause_for_release>
-                , <&macro_release &kp LA(LS(GRAVE)) &kp LG(LC(LA(LS(W))))>
-                ;
-        };
-    };
-
     behaviors {
         td_hy: td_hy {
             compatible = "zmk,behavior-tap-dance";
