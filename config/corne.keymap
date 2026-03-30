@@ -6,12 +6,6 @@
 
 / {
     behaviors {
-        td_hy: td_hy {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LG(LS(LA(LC(Y))))>, <&kp LG(LS(LA(LC(X))))>;
-        };
         td_cv: td_cv {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
